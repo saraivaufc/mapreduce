@@ -1,5 +1,7 @@
 # Geospartial MapReduce
 
+![](docs/mapreduce.png)
+
 ### Install Gdal
 Get gdal development libraries:
 ```shell script
