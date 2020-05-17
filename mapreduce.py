@@ -21,6 +21,9 @@ class MapReduce():
     def map_func(self, info, inputs, outputs):
         outputs.output_image = self.__map_func(inputs.input_image)
 
+    def reduce_func(self, info, inputs, outputs):
+        outputs.output_image = self.__reduce_func(inputs.input_images)
+
     def map_worker(self, input_image, output_image):
         print("Running map function...")
         infiles = applier.FilenameAssociations()
@@ -31,9 +34,6 @@ class MapReduce():
 
         applier.apply(self.map_func, infiles, outfiles,
                       controls=self.get_controls())
-
-    def reduce_func(self, info, inputs, outputs):
-        outputs.output_image = self.__reduce_func(inputs.input_images)
 
     def reduce_worker(self, input_images, output_image):
         print("Running reduce function...")

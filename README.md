@@ -1,6 +1,4 @@
-# Geospartial MapReduce
-
-![](docs/mapreduce.png)
+![Geospartial MapReduce](docs/geospatial_mapreduce)
 
 ### Install Gdal
 Get gdal development libraries:
