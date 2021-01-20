@@ -21,19 +21,14 @@ $ virtualenv env -p python3
 $ source env/bin/activate
 ```
 
-### Install Numpy
+### Install Requirements
 ```shell script
-(env)$ pip3 install numpy==1.17.4
+(env)$ pip3 install -r requirements.txt
 ```
 
 ### Install GDAL Python lib
 ```shell script
 (env)$ pip3 install GDAL==$(gdal-config --version) --global-option=build_ext --global-option="-I/usr/include/gdal"
-```
-
-### Install Requirements
-```shell script
-(env)$ pip3 install -r requirements.txt
 ```
 
 ### Dataset
